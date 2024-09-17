@@ -1,12 +1,363 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
-</head>
-<body>
-    
-</body>
+    <script
+      src="https://kit.fontawesome.com/95c5ab3364.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo" aria-roledescription="logo"></div>
+      <nav class="nav">
+        <ul role="list">
+          <li role="navItem" class="dropdown">
+            <a href="#home" class="link">Poradnik dla początkujących▼</a>
+            <ul role="list" class="submenu" #="submenu_first">
+              <li><a href="#tools" class="link">Wybór narzędzi do pracy</a></li>
+              <li>
+                <a href="#Podstawowe technologie" class="link"
+                  >Podstawowe technologie</a
+                >
+              </li>
+              <li><a href="#Respon" class="link">Responsywność</a></li>
+              <li>
+                <a href="#Hosting" class="link">Hosting i publikacja strony</a>
+              </li>
+              <li>
+                <a href="#Nauka na bieżąco" class="link">Nauka na bierząco</a>
+              </li>
+            </ul>
+          </li>
+          <li role="listitem"><a href="" class="link">Komentarze</a></li>
+          <li role="listitem"><a href="#footer" class="link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <article>
+          <header>
+            <h1>Jak rozpocząć przygodę z tworzeniem stron internetowych?</h1>
+            <div class="container">
+              <div role="text wrapper">
+                <section class="container container--header">
+                  <h2>Poradnik dla początkujących</h2>
+                  <p>Autor: ChatGpt</p>
+                  <p>Data generacji: <date>12-09-2024</date></p>
+                </section>
+              </div>
+              <span role="img"></span>
+            </div>
+          </header>
+          <section>
+            <p>
+              Tworzenie stron internetowych to umiejętność, która zyskuje coraz
+              większą popularność. Niezależnie od tego, czy chcesz stworzyć
+              prosty blog, portfolio, czy bardziej zaawansowaną aplikację,
+              wiedza na temat web developmentu jest niezwykle cenna.
+            </p>
+            <p>
+              Jeśli dopiero zaczynasz swoją przygodę, ten artykuł pomoże Ci
+              postawić pierwsze kroki i zrozumieć podstawowe pojęcia.
+            </p>
+          </section>
+          <section class="verticalContent">
+            <div role="text wrapper">
+              <h3 id="tools">1. Wybór narzędzi do pracy</h3>
+              <p>
+                Zanim zaczniesz kodować, musisz wybrać odpowiednie narzędzia.
+                Podstawowe elementy potrzebne do tworzenia stron to edytor kodu
+                oraz przeglądarka internetowa.
+              </p>
+              <p>
+                <strong>Edytor kodu</strong>: Narzędzia takie jak Visual Studio
+                Code, Sublime Text czy Atom to popularne wybory dla web
+                developerów. Są lekkie, wygodne i oferują wiele wtyczek, które
+                ułatwiają pracę.
+              </p>
+              <p>
+                <strong>Przeglądarka internetowa: </strong>Każdy projekt należy
+                testować w przeglądarce. Najlepiej jest korzystać z popularnych
+                przeglądarek jak Google Chrome czy Firefox, które posiadają
+                narzędzia developerskie (DevTools), pomocne przy debugowaniu i
+                testowaniu.
+              </p>
+            </div>
+            <div class="wrapper_container">
+              <div role="image container" class="container--image">
+                <img src="./public/img/vscode.png" alt="" />
+                <p>fot: przykładowy edytor VsCode</p>
+              </div>
+            </div>
+          </section>
+          <section class="verticalContent verticalContent--reverse">
+            <div role="text wrapper">
+              <h3 id="Podstawowe technologie">
+                2.Podstawowe technologie: HTML, CSS, JavaScript
+              </h3>
+              <p>
+                Każda strona internetowa składa się z trzech podstawowych
+                technologii: HTML, CSS i JavaScript. Oto krótki przegląd każdej
+                z nich:
+              </p>
+              <p>
+                <strong>HTML (HyperText Markup Language):</strong> To szkic
+                Twojej strony. Dzięki HTML określasz strukturę strony, elementy
+                takie jak nagłówki, paragrafy, linki czy obrazy. Każda strona
+                zaczyna się od stworzenia szkieletu w HTML.
+              </p>
+              <p>
+                <strong>CSS(Cascading Style Sheets):</strong> CSS odpowiada za
+                stylizację strony – wygląd elementów, kolory, czcionki, układ na
+                stronie. Dzięki CSS możesz przekształcić zwykły tekst w
+                atrakcyjną, nowoczesną stronę.
+              </p>
+              <p>
+                <strong>JavaScript:</strong> Ostatnia z trzech kluczowych
+                technologii, która pozwala na interaktywność strony. Dzięki
+                JavaScript możesz dodawać animacje, tworzyć formularze czy
+                komunikować się z serwerem.
+              </p>
+            </div>
+            <div class="wrapper_container">
+              <div role="image container" class="container--header">
+                <div class="codeCard">
+                  <header><h4>Przykładowy kod HTML</h4></header>
+                  <p>
+                    <code>
+                      <pre class="code">
+  &lt;!DOCTYPE html&gt; 
+  &lt;html lang="pl"&gt; 
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt; 
+      &lt;meta name="viewport"
+      content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Moja pierwsza strona&lt;/title&gt;
+     &lt;/head&gt; 
+    &lt;body&gt; 
+      &lt;h1&gt;Witamy na mojej stronie!&lt;/h1&gt;
+      &lt;p&gt; To jest mój pierwszy wpis na blogu o tworzeniu stron internetowych. &lt;/p&gt;  
+     &lt;/body&gt; 
+  &lt;/html&gt;
+                      </pre>
+                    </code>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="verticalContent">
+            <div role="text wrapper">
+              <h3 id="Respon">3. Responsywność:</h3>
+              <p>
+                Obecnie niezwykle istotne jest, aby Twoja strona wyglądała
+                dobrze nie tylko na komputerach, ale także na tabletach i
+                smartfonach. Tworzenie responsywnych stron polega na tym, że
+                dostosowują się one do różnych rozmiarów ekranów. Jednym z
+                najprostszych sposobów na osiągnięcie tego efektu jest użycie
+                <strong>Media Queries w CSS</strong>
+              </p>
+              <p>
+                Innym rozwiązaniem jest korzystanie z frameworków takich jak
+                <strong>Bootstrap</strong>, który posiada gotowe komponenty i
+                siatkę ułatwiającą tworzenie responsywnych układów stron.
+              </p>
+            </div>
+            <div class="wrapper_container">
+              <div role="image container" class="container--header">
+                <div class="codeCard">
+                  <header><h4>Przykład prostej reguły CSS</h4></header>
+                  <p>
+                    <code>
+                      <pre class="code">
+    body { font-family: Arial, sans-serif;      
+            background-color: #f0f0f0; } 
+
+    h1 { color: #3498db; }
+
+    css /* Dla ekranów o szerokości mniejszej niż 600px */ 
+
+    @media (max-width: 600px) { 
+      body { background-color: #e0e0e0; } 
+      h1 { font-size: 20px; } } 
+                      </pre>
+                    </code>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="verticalContent verticalContent--reverse">
+            <div role="text wrapper">
+              <h3 id="Hosting">4. Hosting i publikacja strony:</h3>
+              <p>
+                Kiedy Twoja strona jest gotowa, musisz ją opublikować w
+                internecie. W tym celu potrzebujesz hosting i domenę.
+              </p>
+              <p>
+                <strong>Domena:</strong> To adres URL, pod którym będzie
+                dostępna Twoja strona, np. „moja-strona.pl”.
+              </p>
+              <p>
+                <strong>Hosting:</strong> To miejsce na serwerze, gdzie
+                umieścisz pliki swojej strony. Popularne platformy hostingowe
+                dla początkujących to Netlify, GitHub Pages (dla projektów
+                statycznych) oraz tradycyjne rozwiązania jak Hostinger czy OVH.
+              </p>
+            </div>
+            <div class="wrapper_container">
+              <div role="image container" class="container--image">
+                <img
+                  src="./public/img/cloud-5469737_640.jpg"
+                  alt="cloud illustration"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="verticalContent">
+            <div role="text wrapper">
+              <h3 id="Nauka na bieżąco">5. Nauka na bieżąco:</h3>
+              <p>
+                Tworzenie stron to dynamiczna dziedzina, w której ciągle
+                pojawiają się nowe technologie, narzędzia i trendy. Dlatego
+                ważne jest, aby regularnie poszerzać swoją wiedzę. Kursy online:
+                Strony takie jak Udemy, Codecademy czy freeCodeCamp oferują
+                liczne kursy na temat web developmentu. Dokumentacja: Czytaj
+                oficjalne dokumentacje HTML, CSS i JavaScript, aby lepiej
+                zrozumieć, jak działają te technologie.
+              </p>
+              <p>
+                <strong>Społeczność:</strong> Dołącz do społeczności
+                programistów na forach jak Stack Overflow lub Reddit, gdzie
+                możesz zadawać pytania i dzielić się doświadczeniami.
+              </p>
+            </div>
+            <div class="wrapper_container">
+              <div role="image container" class="container--image">
+                <img
+                  src="./public/img/web-1935737_640.png"
+                  alt="web dev illustration"
+                />
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+      <div class="comments">
+        <article class="commentCard">
+          <header>
+            <strong>Jan Kowalski</strong>
+            <span><div class="avatar one"></div></span>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolores provident vel sit ex facilis quis.
+          </p>
+        </article>
+        <article class="commentCard">
+          <header>
+            <strong>Jana Kowalska</strong
+            ><span><div class="avatar two"></div></span>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolores provident vel sit ex facilis quis.
+          </p>
+        </article>
+        <article class="commentCard">
+          <header>
+            <strong>Albert Kot</strong
+            ><span><div class="avatar three"></div></span>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolores provident vel sit ex facilis quis.
+          </p>
+        </article>
+        <article class="commentCard">
+          <header>
+            <strong>Anna Zawada</strong
+            ><span><div class="avatar four"></div></span>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolores provident vel sit ex facilis quis.
+          </p>
+        </article>
+        <article class="commentCard">
+          <header>
+            <strong>Monika Zyt</strong
+            ><span><div class="avatar five"></div></span>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolores provident vel sit ex facilis quis.
+          </p>
+        </article>
+      </div>
+      <div>
+        <form action="">
+          <label for="Name">
+            Autor:
+            <input
+              type="text"
+              placeholder="Imie i nazwisko"
+              id="Name"
+              class="maring10Rem"
+            />
+          </label>
+          <label for="comment"
+            >Komentarz:
+            <textarea
+              name="comment"
+              id="comment"
+              rows="5"
+              placeholder="Treść komentarza - max: 30 znaków"
+              class="maring10Rem"
+            ></textarea>
+          </label>
+          <button>Zapisz</button>
+        </form>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="socialLinks">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <a href="" class="link"
+                  ><i class="fa-brands fa-facebook"></i> facebook</a
+                >
+              </td>
+              <td>
+                <a href="" class="link"
+                  ><i class="fa-brands fa-instagram"></i> instagram</a
+                >
+              </td>
+              <td>
+                <a href="" class="link"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      ©2024
+    </footer>
+  </body>
+  <script src="app.js"></script>
 </html>

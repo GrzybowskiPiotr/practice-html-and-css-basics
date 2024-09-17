@@ -1,0 +1,52 @@
+<!-- <section class="container container--title">
+            <p><span>12-09-2024</span></p>
+          </section>
+          <img src="./public/img/code.jpg" alt="code image" />
+        </div> -->
+        <!--      Przykład prostego szablonu HTML:
+        html
+        <code>
+          <!DOCTYPE html>
+          <html lang="pl">
+            <head>
+              <meta charset="UTF-8" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+              <title>Moja pierwsza strona</title>
+            </head>
+            <body>
+              <h1>Witamy na mojej stronie!</h1>
+              <p>
+                To jest mój pierwszy wpis na blogu o tworzeniu stron
+                internetowych.
+              </p>
+            </body>
+          </html>
+        </code>
+        Przykład
+        prostej reguły CSS: css body { font-family: Arial, sans-serif;
+        background-color: #f0f0f0; } h1 { color: #3498db; } 
+        
+        Przykład prostego skryptu: javascript
+        document.querySelector('h1').textContent = 'Witamy na mojej dynamicznej
+        stronie!'; 
+        
+        
+        
+         css /* Dla ekranów o szerokości
+        mniejszej niż 600px */ @media (max-width: 600px) { body {
+        background-color: #e0e0e0; } h1 { font-size: 20px; } } 
+        
+        
+       
+         Społeczność: Dołącz do
+        społeczności programistów na forach jak Stack Overflow lub Reddit, gdzie
+        możesz zadawać pytania i dzielić się doświadczeniami. Podsumowanie
+        Tworzenie stron internetowych to umiejętność, która wymaga czasu i
+        cierpliwości, ale jest również niezwykle satysfakcjonująca. Zacznij od
+        prostych projektów, korzystaj z narzędzi i zasobów dostępnych online, a
+        z czasem Twoje umiejętności będą się rozwijać, pozwalając Ci na
+        tworzenie coraz bardziej zaawansowanych stron. Powodzenia w nauce
+        tworzenia stron internetowych! 🌐 -->
